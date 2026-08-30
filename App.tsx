@@ -1387,7 +1387,9 @@ function MemoryChallenge({ done }: any) {
       : "story";
   return (
     <View style={{ gap: 16 }}>
-      <Text style={s.darkLead}>Select any words you remember. It's okay if you don't remember any.</Text>
+      <Text style={s.darkLead}>
+        Select any words you remember. It's okay if you don't remember any.
+      </Text>
       <View style={s.wordGrid}>
         {pool.map((x) => (
           <Pressable
@@ -1414,23 +1416,19 @@ function MemoryChallenge({ done }: any) {
           </Pressable>
         ))}
       </View>
-      {(
-        <>
-          <Text style={s.prompt}>What would you test next?</Text>
-          {[
-            "Whether categories help recall",
-            "Whether order changes memory",
-            "Whether people remember images better",
-          ].map((x) => (
-            <DarkChoice
-              key={x}
-              label={x}
-              selected={next === x}
-              onPress={() => setNext(x)}
-            />
-          ))}
-        </>
-      )}
+      <Text style={s.prompt}>What would you test next?</Text>
+      {[
+        "Whether categories help recall",
+        "Whether order changes memory",
+        "Whether people remember images better",
+      ].map((x) => (
+        <DarkChoice
+          key={x}
+          label={x}
+          selected={next === x}
+          onPress={() => setNext(x)}
+        />
+      ))}
       {next ? (
         <Feedback
           text={`You remembered ${remembered} of 8. What caught our attention was the question you asked next.`}
@@ -2584,10 +2582,20 @@ function ClubMatchCard({ club, rank, schoolId }: any) {
     </PressableCard>
   );
 }
-function CampusActionCard({ action }: { action: CampusAction }) {
+function CampusActionCard({
+  action,
+  onReflect,
+}: {
+  action: CampusAction;
+  onReflect: () => void;
+}) {
   return (
     <PressableCard
-      onPress={() => action.url && openResource(action.url)}
+      onPress={() =>
+        action.kind === "reflect"
+          ? onReflect()
+          : action.url && openResource(action.url)
+      }
       style={s.actionCard}
     >
       <View style={s.actionTop}>
@@ -2695,6 +2703,7 @@ function Path({
   );
   const [choosingFocus, setChoosingFocus] = useState(false);
   const [activeMissionId, setActiveMissionId] = useState<string | null>(null);
+  const [missionStage, setMissionStage] = useState<"brief" | "reflect">("brief");
   const [celebration, setCelebration] = useState<{
     missionTitle: string;
     energy: ReflectionEnergy;
@@ -2733,8 +2742,9 @@ function Path({
       school,
       actions.find((action: CampusAction) => action.url),
     );
-  const openMission = (missionId: string) => {
+  const openMission = (missionId: string, stage: "brief" | "reflect" = "brief") => {
     light();
+    setMissionStage(stage);
     setActiveMissionId(missionId);
   };
 
@@ -2747,6 +2757,7 @@ function Path({
     if (!requestedMission || !isKnownFieldworkMissionId(requestedMission))
       return;
     setActiveMissionId(missionPrefix + requestedMission);
+    setMissionStage("brief");
     onMissionOpened();
   }, [requestedMission, missionPrefix, onMissionOpened]);
   useEffect(() => {
@@ -2794,6 +2805,7 @@ function Path({
         focusedField={patternShift.focusedField}
         focusedDirection={patternShift.focusedDirection}
         changedSignals={patternShift.changedSignals}
+        isUpdate={patternShift.isUpdate}
         onDismiss={() => setPatternShift(null)}
         onNextTest={() => {
           setPatternShift(null);
@@ -2810,6 +2822,7 @@ function Path({
       <MissionWorkspace
         key={activeMissionId}
         missionId={activeMissionId}
+        initialStage={missionStage}
         family={focus.family}
         fieldName={focus.name}
         brief={briefFor(activeMissionId)}
@@ -2831,6 +2844,7 @@ function Path({
           setActiveMissionId(null);
         }}
         onSave={(reflection) => {
+          const isUpdate = Boolean(session.reflections[reflection.missionId]);
           const changedSignals = Object.keys(
             signalsForFieldworkReflection(reflection),
           ).map(
@@ -2840,6 +2854,7 @@ function Path({
               dimension,
           );
           setPendingShift({
+            isUpdate,
             missionId: reflection.missionId,
             recordedAt: reflection.recordedAt,
             energy: reflection.energy,
@@ -2860,10 +2875,12 @@ function Path({
             ),
           );
           success();
-          setCelebration({
-            missionTitle: briefFor(reflection.missionId).title,
-            energy: reflection.energy,
-          });
+          if (!isUpdate) {
+            setCelebration({
+              missionTitle: briefFor(reflection.missionId).title,
+              energy: reflection.energy,
+            });
+          }
           setActiveMissionId(null);
         }}
       />
@@ -3027,7 +3044,11 @@ function Path({
       )}
       <Text style={s.listHeading}>Campus starting points</Text>
       {actions.slice(0, 3).map((action: CampusAction) => (
-        <CampusActionCard key={action.id} action={action} />
+        <CampusActionCard
+          key={action.id}
+          action={action}
+          onReflect={() => openMission(missionPrefix + "attend-event", "reflect")}
+        />
       ))}
     </ScrollView>
   );

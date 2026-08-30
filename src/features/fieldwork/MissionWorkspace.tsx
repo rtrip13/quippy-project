@@ -22,6 +22,7 @@ import type { MissionBrief } from "./brief";
 
 type Props = {
   missionId: string;
+  initialStage?: "brief" | "reflect";
   family: Family;
   fieldName: string;
   brief: MissionBrief;
@@ -71,6 +72,7 @@ function Choice<T extends string>({
 
 export function MissionWorkspace({
   missionId,
+  initialStage = "brief",
   family,
   fieldName,
   brief,
@@ -81,7 +83,7 @@ export function MissionWorkspace({
   onRemove,
   onClose,
 }: Props) {
-  const [stage, setStage] = useState<"brief" | "reflect">("brief");
+  const [stage, setStage] = useState(initialStage);
   const [energy, setEnergy] = useState<ReflectionEnergy | null>(
     reflection?.energy ?? null,
   );
@@ -225,8 +227,8 @@ export function MissionWorkspace({
       ) : (
         <>
           <Text style={s.body}>
-            A draining experience is useful evidence too. Separate the work from
-            the circumstances.
+            Reflect only on an activity you actually tried. A draining experience
+            is useful evidence too. Separate the work from the circumstances.
           </Text>
           <Choice
             label="How was your energy?"

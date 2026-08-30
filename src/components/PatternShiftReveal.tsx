@@ -23,6 +23,7 @@ export type PatternShiftRevealProps = {
   focusedField: string;
   focusedDirection?: string;
   changedSignals?: string[];
+  isUpdate?: boolean;
   onDismiss: () => void;
   onNextTest: () => void;
   nextTestLabel?: string;
@@ -77,6 +78,7 @@ export function PatternShiftReveal({
   focusedField,
   focusedDirection = focusedField,
   changedSignals = [],
+  isUpdate = false,
   onDismiss,
   onNextTest,
   nextTestLabel = "CHOOSE MY NEXT EXPERIMENT",
@@ -107,7 +109,9 @@ export function PatternShiftReveal({
   const enteredPattern = beforeRank === null && afterRank !== null;
   const leftPattern = beforeRank !== null && afterRank === null;
 
-  let headline = "Your evidence is growing.";
+  let headline = isUpdate
+    ? "Your reflection is up to date."
+    : "Your evidence is growing.";
   let rankSummary = `${focusedDirection} stayed at ${rankLabel(afterRank)}.`;
 
   if (enteredPattern) {
@@ -159,7 +163,9 @@ export function PatternShiftReveal({
             <Text style={styles.step}>Reflection saved</Text>
           </View>
 
-          <Text style={styles.eyebrow}>New clue added</Text>
+          <Text style={styles.eyebrow}>
+            {isUpdate ? "Clue updated" : "New clue added"}
+          </Text>
           <Text style={styles.title}>{headline}</Text>
           <Text style={styles.lead}>{rankSummary}</Text>
           {focusedDirection !== focusedField ? (
