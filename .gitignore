@@ -8,3 +8,7 @@ web-build/
 .env.*
 !.env.example
 .serena/
+content-drafts/
+ios/
+android/
+assets/scout/scout-guide 2.png

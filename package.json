@@ -5,20 +5,34 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "ios": "expo start --ios",
-    "android": "expo start --android",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/analytics/*.test.ts src/data/schools/*.test.ts src/data/schools/umich/*.test.ts src/domain/*.test.ts src/features/advisor/*.test.ts src/features/campus/*.test.ts src/features/comparison/*.test.ts src/features/fieldwork/*.test.ts src/features/privacy/*.test.ts src/features/reflectionAssistant/*.test.ts src/features/resources/*.test.ts src/state/*.test.ts src/features/tuesday/*.test.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "scenarios:generate": "tsx scripts/generate-tuesday.ts"
   },
   "dependencies": {
-    "expo": "~54.0.0",
-    "expo-status-bar": "~3.0.9",
-    "react": "19.1.0",
-    "react-native": "0.81.5",
-    "react-native-safe-area-context": "~5.6.0"
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.18",
+    "expo-haptics": "~57.0.2",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-dom": "^19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
-    "@types/react": "~19.1.10",
-    "typescript": "~5.9.2"
+    "@types/node": "^26.4.0",
+    "@types/react": "~19.2.4",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.13",
+    "typescript": "~6.0.3"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
   }
 }

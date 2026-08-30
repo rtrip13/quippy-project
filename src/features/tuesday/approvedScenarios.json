@@ -1,0 +1,422 @@
+{
+  "Arts, Design & Performance": [
+    {
+      "time": "9:00 AM",
+      "place": "Design studio · make three versions",
+      "text": "You sketch three posters for a student concert. Each uses the same title, date, and image, but you change their size and position so someone walking past can find the essentials quickly.",
+      "question": "How interested would you be in trying three visual versions of a concert poster?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "1:00 PM",
+      "place": "Critique · watch someone use it",
+      "text": "You show a poster draft to a classmate for five seconds. They remember the image but miss the date. You ask where they looked first and use that feedback to revise the layout.",
+      "question": "How interested would you be in using someone's feedback to revise your poster?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "4:30 PM",
+      "place": "Production · refine the details",
+      "text": "Your test print has tiny text and a date too close to the edge. You adjust the type size and margins, print again, and check that the details remain readable.",
+      "question": "How interested would you be in making several small revisions before finishing a design?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Business & Economics": [
+    {
+      "time": "10:00 AM",
+      "place": "Business case · a campus café",
+      "text": "A campus café sells coffee and muffins. You compare receipts with ingredient costs, then account for staffing and rent to see why strong sales might still leave little money.",
+      "question": "How interested would you be in using receipts and costs to investigate a café's finances?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "2:30 PM",
+      "place": "Team recommendation · pick a tradeoff",
+      "text": "The shop owner wants to grow. Your team analyzes the choice between opening a second location with higher rent or investing in a new delivery app that charges a percentage of each sale.",
+      "question": "How interested would you be in weighing two imperfect business options?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "5:00 PM",
+      "place": "Spreadsheet · check the assumptions",
+      "text": "Your delivery plan assumes orders grow by 10% each month. You change the spreadsheet to keep order numbers flat, include the app's fees, and explain whether the café could still cover its costs.",
+      "question": "How interested would you be in rechecking a recommendation when the numbers change?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Communication & Media": [
+    {
+      "time": "9:00 AM",
+      "place": "Reporting exercise · find the story",
+      "text": "A new community garden opened on the west side. You collect quotes from a local gardener and a neighborhood developer to identify why residents visit and what concerns they voice.",
+      "question": "How interested would you be in interviewing different people about the same issue?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "1:00 PM",
+      "place": "Editing · build a short explainer",
+      "text": "You have ten minutes of raw audio about garden plot rules and only enough space for a one-minute summary. You trim the technical jargon to make the guidelines understandable.",
+      "question": "How interested would you be in editing a clear story from longer interviews?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "4:30 PM",
+      "place": "Fact check · verify before publishing",
+      "text": "An interview transcript claims the garden irrigation uses well water, but the permit shows it is city-supplied. You cross-reference the utility document to update your text.",
+      "question": "How interested would you be in checking small factual details before publishing?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Computing & Data": [
+    {
+      "time": "10:00 AM",
+      "place": "Programming · debug a sign-up form",
+      "text": "A club sign-up form crashes when someone leaves their email blank. You trace what happens to the empty value, add a check, and test whether the form now shows a helpful message.",
+      "question": "How interested would you be in finding and fixing the cause of this form crash?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "2:30 PM",
+      "place": "Data analysis · clean a spreadsheet",
+      "text": "A survey spreadsheet writes dates as '12/01' and 'Dec 1st'. You check whether the source uses month-first or day-first dates, then put them in one format before counting responses by month.",
+      "question": "How interested would you be in checking and fixing inconsistent dates in a spreadsheet?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "5:00 PM",
+      "place": "Software testing · try to break it",
+      "text": "You have a basic calculator application. To find flaws, you input huge numbers, symbols like punctuation, and negative values to see which ones cause the app to display error messages or freeze.",
+      "question": "How interested would you be in systematically trying to break an app by entering unusual inputs?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "economics": [
+    {
+      "time": "9:00 AM",
+      "place": "Economics · why did rent rise?",
+      "text": "Rent rose near a university after enrollment grew while few apartments were built. You sketch supply and demand, then explain what your model predicts if more housing becomes available.",
+      "question": "How interested would you be in using a simple model to explain a rent increase?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "1:00 PM",
+      "place": "Problem set · compare explanations",
+      "text": "Two similar towns have different rents and building rules. You compare new apartment numbers, wages, and population growth, then list what else you would need before blaming the rent gap on the rules.",
+      "question": "How interested would you be in comparing competing explanations for a rent difference?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "4:30 PM",
+      "place": "Model revision · challenge an assumption",
+      "text": "Your housing model assumes renters can move without extra costs. You add a bus fare and a longer commute for cheaper apartments, then explain how those costs could change someone's choice.",
+      "question": "How interested would you be in revising a model when its assumptions miss everyday costs?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Education, Public Service & Policy": [
+    {
+      "time": "10:00 AM",
+      "place": "Policy exercise · library hours",
+      "text": "The library can afford ten more staff hours a week. You compare staying open later on weekdays with opening on Sunday, using sample attendance counts and staffing costs to explain the tradeoffs.",
+      "question": "How interested would you be in comparing ways to use a limited public budget?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "2:30 PM",
+      "place": "Community feedback · who is missing?",
+      "text": "Your library-hours survey mostly reached students living on campus. You draft questions for commuters and students with evening jobs to learn whether either proposed schedule would help them.",
+      "question": "How interested would you be in seeking feedback from people a proposal may overlook?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "5:00 PM",
+      "place": "Policy memo · make it workable",
+      "text": "You recommend opening the library on Sunday. You write a one-page plan showing staffing, estimated costs, and how you would use attendance after a month to decide whether to keep the hours.",
+      "question": "How interested would you be in turning a proposal into an implementation plan?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Engineering & Built Environment": [
+    {
+      "time": "10:00 AM",
+      "place": "Design exercise · a wobbling shelf",
+      "text": "A shelf tilts under heavy books. You sketch two triangular braces and compare how each would support the load and attach to the wall.",
+      "question": "How interested would you be in sketching and comparing supports for a tilting shelf?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "2:30 PM",
+      "place": "Prototype workshop · test a brace",
+      "text": "In a supervised workshop exercise, your small wooden brace bends under a test load. You record where it bends, reinforce that joint, and repeat the test with the same load.",
+      "question": "How interested would you be in changing a prototype after a load test fails?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "5:00 PM",
+      "place": "Design review · check the constraints",
+      "text": "Your brace supports the shelf but blocks the space underneath. You revise the drawing to preserve support while leaving enough room for a chair.",
+      "question": "How interested would you be in revising a design to meet two competing requirements?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Health & Human Services": [
+    {
+      "time": "10:00 AM",
+      "place": "Practice interview · understand a barrier",
+      "text": "You review a fictional case study where a client reports physical difficulty reaching a local food pantry. You draft three follow-up questions to identify if the challenge is distance, mobility, or timing.",
+      "question": "How interested would you be in asking questions to understand someone's care barriers?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "2:30 PM",
+      "place": "Class role-play · explain a plan",
+      "text": "In a classroom role-play, a peer is confused by an appointment handout. You rewrite it as three plain-language steps, explain the plan, and ask them to describe it back to you.",
+      "question": "How interested would you be in practicing a clear, patient explanation?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "5:00 PM",
+      "place": "Case notes · document the handoff",
+      "text": "After the fictional interview, you write a short handoff note: what the person said, which access barriers remain, and what the next team member should follow up on. You separate observations from guesses.",
+      "question": "How interested would you be in writing careful notes after a conversation?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Humanities & Languages": [
+    {
+      "time": "9:30 AM",
+      "place": "Close reading · two accounts",
+      "text": "You analyze two different memoirs documenting the same city parade. You highlight descriptive adjectives in both texts to see how the authors create contrasting moods and produce a brief summary of the differences.",
+      "question": "How interested would you be in identifying how different writers portray the same event through their choice of words?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "1:15 PM",
+      "place": "Seminar · defend an interpretation",
+      "text": "A classmate reads a poem's speaker as angry; you read them as grieving. You each choose two lines and discuss which interpretation the words support.",
+      "question": "How interested would you be in discussing two interpretations using evidence from a poem?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "4:45 PM",
+      "place": "Essay revision · narrow a claim",
+      "text": "You realize your essay claims that all technology is isolating, but your research includes an app for community building. You rewrite your thesis to specify which types of tools isolate people and update your body paragraphs accordingly.",
+      "question": "How interested would you be in narrowing the scope of an argument when you find evidence that complicates your original claim?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Interdisciplinary & Individualized": [
+    {
+      "time": "9:00 AM",
+      "place": "Project design · a hotter campus",
+      "text": "You investigate why one campus walkway feels hotter than another. You plan temperature readings at the same time each day, map the shade, and interview students about where they choose to walk.",
+      "question": "How interested would you be in combining measurements, maps, and interviews to study one place?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "1:00 PM",
+      "place": "Synthesis · evidence disagrees",
+      "text": "Your readings show a shaded courtyard is cooler, but few students use it. Interviews mention loud construction nearby. You explain how temperature and noise together might shape where people sit.",
+      "question": "How interested would you be in connecting measurements with interviews to explain an unexpected pattern?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "4:30 PM",
+      "place": "Project scope · decide what to leave out",
+      "text": "You cannot study every courtyard this term. You choose two and focus on noon to 2 PM. You explain why that comparison is useful and why it cannot tell you about evening use.",
+      "question": "How interested would you be in selecting a specific time window to make a complex project manageable?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Natural & Physical Sciences": [
+    {
+      "time": "10:00 AM",
+      "place": "Lab exercise · an unexpected result",
+      "text": "One cup of water cools faster than another. You plan a repeat using equal amounts, matching containers, and the same starting temperature to see whether the original difference remains.",
+      "question": "How interested would you be in designing a controlled test of an unexpected result?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "2:30 PM",
+      "place": "Lab notebook · measure and compare",
+      "text": "You record two cups' temperatures every two minutes and plot the readings. One point is far from the others. You check the notebook and thermometer placement before deciding how to report it.",
+      "question": "How interested would you be in collecting measurements and investigating an unusual reading?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "5:00 PM",
+      "place": "Lab report · explain the uncertainty",
+      "text": "Your thermometer rounds to the nearest degree, and the cups differ by less than that. You explain why these readings cannot establish a clear difference and what a more precise test would need.",
+      "question": "How interested would you be in explaining what measurements can and cannot tell you?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ],
+  "Social & Behavioral Sciences": [
+    {
+      "time": "9:00 AM",
+      "place": "Psychology · study design",
+      "text": "You plan a fictional study of whether background music affects puzzle-solving speed. You randomly assign classmates to music or silence, give both groups the same puzzle, and compare completion times.",
+      "question": "How interested would you be in designing a fair test of how music affects puzzle-solving?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "1:00 PM",
+      "place": "Sociology · interview analysis",
+      "text": "You examine transcripts from ten commuters discussing daily transit delays. You highlight specific mentions of bus scheduling versus train reliability to build a summary of common frustrations.",
+      "question": "How interested would you be in organizing transit complaints into meaningful themes?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    },
+    {
+      "time": "4:30 PM",
+      "place": "Research methods · checking a claim",
+      "text": "A report says the cafeteria is most crowded at noon. Its data counts people entering but not leaving. You explain why arrivals alone cannot tell you how many people are inside.",
+      "question": "How interested would you be in checking whether data actually supports a claim?",
+      "choices": [
+        "Interested — I'd like to try it",
+        "Unsure — I'd need to try it first",
+        "Not interested — I'd rather do other work"
+      ]
+    }
+  ]
+}

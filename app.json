@@ -15,6 +15,7 @@
     },
     "android": {
       "package": "com.rtrip13.unlabeled"
-    }
+    },
+    "plugins": ["expo-status-bar"]
   }
 }
