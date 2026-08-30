@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "UNLABELED",
+    "slug": "unlabeled",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#F4F1E8"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rtrip13.unlabeled"
+    },
+    "android": {
+      "package": "com.rtrip13.unlabeled"
+    }
+  }
+}
